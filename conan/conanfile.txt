@@ -1,0 +1,6 @@
+[requires]
+masscalculator-core/0.1.0@masscalculator/stable
+
+[generators]
+CMakeDeps
+CMakeToolchain
