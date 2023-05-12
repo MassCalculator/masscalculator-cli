@@ -37,10 +37,14 @@ set(MASSCALCULATOR_CLI_PATCH ${PROJECT_VERSION_PATCH})
 # uder third_party/ redirectly.
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH}
   "${CMAKE_SOURCE_DIR}/cmake"
+  "${CMAKE_SOURCE_DIR}/third_party"
 )
 
 # Initialize the package manager.
 include(conan)
+
+# Search for all third party dependencies
+include(third_party)
 
 ################################################################################
 #
