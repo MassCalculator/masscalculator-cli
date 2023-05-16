@@ -20,19 +20,16 @@ jobs:
       run: sudo tools/installers/essentials.sh
 
     - name: Configure CMake
-      # run: cmake -B ${{github.workspace}}/build/masscalculator-docker-${{matrix.build_type}} -G Ninja -DCMAKE_BUILD_TYPE=${{matrix.build_type}}
-      # @todo(jimmyhalimi): Update stages that are in progress.
-      run: echo 'Deploy stage is in progress'
+      run: cmake -B ${{github.workspace}}/build/masscalculator-cli-${{matrix.build_type}} -G Ninja -DCMAKE_BUILD_TYPE=${{matrix.build_type}}
 
     - name: Build
-      # run: cmake --build ${{github.workspace}}/build/masscalculator-docker-${{matrix.build_type}} -t build-masscalculator-core-docker --config ${{matrix.build_type}}
       # @todo(jimmyhalimi): Update stages that are in progress.
-      run: echo 'Deploy stage is in progress'
+      # run: cmake --build ${{github.workspace}}/build/masscalculator-cli-${{matrix.build_type}} --config ${{matrix.build_type}}
+      run: echo 'Build stage is in progress'
 
     - name: Run
-      # run: cmake --build ${{github.workspace}}/build/masscalculator-docker-${{matrix.build_type}} -t run-masscalculator-core-docker --config ${{matrix.build_type}}
       # @todo(jimmyhalimi): Update stages that are in progress.
-      run: echo 'Deploy stage is in progress'
+      run: echo 'Run stage is in progress'
 
     - name: Deploy
       # @todo(jimmyhalimi): Update stages that are in progress.
