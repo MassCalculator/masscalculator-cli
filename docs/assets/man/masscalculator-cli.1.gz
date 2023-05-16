@@ -1,4 +1,4 @@
-.TH "libmasscalculator" "1" "12 April 2020" "" ""
+.TH "masscalculator-cli" "1" "03 May 2023" "" ""
 .SH "NAME"
 libMassCalculator \- Library for calculating the weight of different materials and shapes
 
