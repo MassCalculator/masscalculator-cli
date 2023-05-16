@@ -10,6 +10,8 @@ The `masscalculator-cli` is an command line interface for using the `masscalcula
 
 ## Instructions
 
+- [Environment Variables](docs/ENVIRONMENT.md)
+- [Environment Setup](docs/SETUP.md)
 - [How to Build](docs/BUILD.md)
 
 ## Jenkins Server
