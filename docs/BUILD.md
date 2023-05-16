@@ -38,9 +38,7 @@ cmake .. -DBUILD_TESTS=ON
 cmake --build .
 ```
 
-## Build Artifacts
-
-### Documentation
+## Documentation
 
 The Doxygen documentation will be available under the subdirectory `docs/html`
 of your build directory. E.g., in `build/docs/html`.
