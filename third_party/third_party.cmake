@@ -5,3 +5,4 @@ include(FetchContent)
 
 # Third-party dependencies available
 include(doxygen)
+include(masscalculator-core)
