@@ -19,7 +19,7 @@ jobs:
     - name: Environment setup
       run: sudo tools/installers/essentials.sh
 
-    - name: Local Conan Recipe Checkout [Temporary]
+    - name: Conan Recipe Checkout [Temporary]
       uses: actions/checkout@v2
       with:
         repository: MassCalculator/conan-masscalculator-core

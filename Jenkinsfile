@@ -11,7 +11,7 @@ pipeline {
                 sh "sudo tools/installers/essentials.sh"
             }
         }
-        stage('Local Conan Recipe Checkout [Temporary]') {
+        stage('Conan Recipe Checkout [Temporary]') {
             steps {
                 git branch: 'master', url: 'https://github.com/MassCalculator/conan-masscalculator-core.git'
             }
