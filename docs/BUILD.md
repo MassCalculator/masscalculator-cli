@@ -10,7 +10,7 @@ Call CMake using the following commands:
 ### Basic Configuration, Debug, no Extra Tools, no Tests, no Documentation
 
 ```bash
-cmake -S $MASSCALCULATOR_CLI_SOURCE -B <BUILD DIRECTORY>
+cmake -S $MASSCALCULATOR_CLI_SOURCE -B <BUILD DIRECTORY> -G Ninja -DCMAKE_BUILD_TYPE=<Debug|Release>
 ```
 
 ### Configure Build with Doxygen Documentation
@@ -26,16 +26,7 @@ From the build directory call
 ### Build everything
 
 ```bash
-cmake --build .
-```
-
-### Old way build
-
-```bash
-cd $MASSCALCULATOR_CLI_SOURCE
-mkdir build && cd build
-cmake .. -DBUILD_TESTS=ON 
-cmake --build .
+cmake --build <BUILD DIRECTORY> --config <Debug|Release>
 ```
 
 ## Documentation
