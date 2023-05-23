@@ -28,9 +28,6 @@ jobs:
     - name: Conan Profile Detect [Temporary]
       run: conan profile detect
 
-    - name: Local Conan Recipe Build [Temporary]
-      run: conan create conan-masscalculator-core/all/ --version 0.1.0 --user masscalculator --channel stable --build missing
-
     - name: Configure CMake
       run: cmake -B ${{github.workspace}}/build/masscalculator-cli-${{matrix.build_type}} -G Ninja -DCMAKE_BUILD_TYPE=${{matrix.build_type}}
 
