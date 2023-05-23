@@ -16,11 +16,6 @@ pipeline {
                 git branch: 'master', url: 'https://github.com/MassCalculator/conan-masscalculator-core.git'
             }
         }
-        stage('Conan Profile Detect [Temporary]') {
-            steps {
-                sh "conan profile detect"
-            }
-        }
         stage('Conan Config [Temporary]') {
             steps {
                 sh "echo -e \"tools.system.package_manager:mode = install\ntools.system.package_manager:sudo = True\n\" > ~/.conan2/global.conf"
