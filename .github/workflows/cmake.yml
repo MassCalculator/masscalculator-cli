@@ -41,6 +41,10 @@ jobs:
       # @todo(jimmyhalimi): Update stages that are in progress.
       run: echo 'Run stage is in progress'
 
+    - name: Package
+      # @todo(jimmyhalimi): Update stages that are in progress.
+      run: echo 'Package stage is in progress'
+
     - name: Deploy
       # @todo(jimmyhalimi): Update stages that are in progress.
       run: echo 'Deploy stage is in progress'
