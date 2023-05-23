@@ -11,35 +11,47 @@ pipeline {
                 sh "sudo tools/installers/essentials.sh"
             }
         }
-        stage('Build') {
+        stage('Configure CMake') {
             parallel {
                 stage('Debug') {
                     steps {
                         sh "cmake -B build/masscalculator-cli-Debug -G Ninja -DCMAKE_BUILD_TYPE=Debug"
-                        sh "cmake --build build/masscalculator-cli-Debug --config Debug"
                     }
                 }
                 stage('Release') {
                     steps {
                         sh "cmake -B build/masscalculator-cli-Release -G Ninja -DCMAKE_BUILD_TYPE=Release"
+                    }
+                }
+            }
+        }
+        stage('Build') {
+            parallel {
+                stage('Debug') {
+                    steps {
+                        sh "cmake --build build/masscalculator-cli-Debug --config Debug"
+                    }
+                }
+                stage('Release') {
+                    steps {
                         sh "cmake --build build/masscalculator-cli-Release --config Release"
                     }
                 }
             }
         }
-        stage('Test') {
+        stage('Run') {
             parallel {
                 stage('Debug') {
-            steps {
-                // @todo(jimmyhalimi): Update stages that are in progress.
-                echo 'Test stage (Debug) is in progress'
-            }
+                    steps {
+                        // @todo(jimmyhalimi): Update stages that are in progress.
+                        echo 'Run stage (Debug) is in progress'
+                    }
                 }
                 stage('Release') {
-            steps {
-                // @todo(jimmyhalimi): Update stages that are in progress.
-                echo 'Test stage (Release) is in progress'
-            }
+                    steps {
+                        // @todo(jimmyhalimi): Update stages that are in progress.
+                        echo 'Run stage (Release) is in progress'
+                    }
                 }
             }
         }

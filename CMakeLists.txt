@@ -57,8 +57,8 @@ if(${BUILD_DOCS})
   add_subdirectory(docs)
 endif()
 
-# This adds the masscalculator command line interface.
-add_subdirectory(masscalculator-cli)
+# This adds the executables for this project.
+add_subdirectory(executables)
 
 # This adds the compile flags.
 target_compile_options(${PROJECT_NAME} PRIVATE -O2 -Wall -Wextra -Werror)
