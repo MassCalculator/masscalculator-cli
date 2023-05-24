@@ -1,7 +1,7 @@
 # MassCalculator CLI
 
 [![Build Status](https://jenkins.mergimhalimi.com/buildStatus/icon?job=masscalculator-cli%2Fmaster)](https://jenkins.mergimhalimi.com/job/masscalculator-cli/job/master/)
-[![Build Status](https://github.com/MassCalculator/masscalculator-cli/workflows/CMake/badge.svg)](https://github.com/MassCalculator/masscalculator-cli/actions)
+[![CMake](https://github.com/MassCalculator/masscalculator-cli/actions/workflows/cmake.yml/badge.svg?branch=master)](https://github.com/MassCalculator/masscalculator-cli/actions/workflows/cmake.yml)
 
 This repository contains the CLI interface for `masscalculator-core` library.
 
