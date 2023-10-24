@@ -1,31 +1,31 @@
-.TH "masscalculator-cli" "1" "03 May 2023" "" ""
-.SH "NAME"
-libMassCalculator \- Library for calculating the weight of different materials and shapes
+.TH masscalculator-cli 1 "28 May 2023" "Version 0.1.0" "masscalculator-cli"
 
-.SH "DESCRIPTION"
+.SH NAME
+masscalculator-cli \- command line interface for the libMassCalculator library
 
-.PP 
-libMassCalculator is an open source library for calculating the weight of different 
-materials and shapes written in C++.
+.SH DESCRIPTION
+masscalculator-cli is an open-source command line interface written in C++ that utilizes the massacalculator-core library. It provides the functionality to calculate the weight of various materials and shapes.
 
-.PP 
-libMassCalculator supports a huge variety of materials and shapes
+The massacalculator-core library is a powerful tool for weight calculation and supports a wide range of materials and shapes. By leveraging the capabilities of the library, masscalculator-cli allows users to perform weight calculations conveniently from the command line.
 
+Users can specify the material and shape parameters as input, and the command line interface will utilize the underlying library to calculate the corresponding weight accurately.
 
-.SH "USAGE"
-.PP 
+Please refer to the "USAGE" section for detailed instructions on how to use masscalculator-cli and explore the available options and command syntax.
 
-    TODO
+.SH SYNOPSIS
+masscalculator-cli [OPTIONS] [ARGS]
 
-Where: 
+.SH OPTIONS
+[Describe the available command-line options here]
 
-    TODO
+.SH USAGE
+Example usage:
+.br
+masscalculator-cli -m gold -s cylinder 0.1 0.1
+.br
+[Provide a more detailed example explaining the purpose of each argument and expected output]
 
-.SH "AUTHOR"
-
-.PP 
-libMassCalculator is written and maintained by Mergim Halimi (m.halimi123@gmail.com)
-and contributors from the open source community.
-.PP 
-Mailing lists for support and development are available at:
-TODO
+.SH AUTHOR
+masscalculator-cli is written and maintained by Mergim Halimi.
+.br
+For bug reports and contributions, please contact: m.halimi123@gmail.com
