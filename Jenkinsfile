@@ -15,7 +15,6 @@ pipeline {
             parallel {
                 stage('Debug') {
                     steps {
-                        sh "ls"
                         sh "cmake -B build/masscalculator-cli-Debug -G Ninja -DCMAKE_BUILD_TYPE=Debug"
                     }
                 }
