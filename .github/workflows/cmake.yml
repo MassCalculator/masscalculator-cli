@@ -25,6 +25,9 @@ jobs:
         repository: MassCalculator/conan-masscalculator-core
         path: conan-masscalculator-core
 
+    - name: Conan Profile Detect [Temporary]
+      run: conan profile detect
+
     - name: Local Conan Recipe Build [Temporary]
       run: conan create conan-masscalculator-core/all/ --version 0.2.0 --user masscalculator --channel stable --build missing
 
