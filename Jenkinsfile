@@ -14,17 +14,20 @@ pipeline {
         stage('Conan Recipe Checkout [Temporary]') {
             steps {
                 checkout([$class: 'GitSCM', branches: [[name: 'master']], userRemoteConfigs: [[url: 'https://github.com/MassCalculator/conan-masscalculator-core.git']]])
+                sh "ls"
+                sh "ls ../"
             }
         }
         stage('Local Conan Recipe Build [Temporary]') {
             steps {
-                sh "conan create conan-masscalculator-core/all/ --version 0.2.0 --user masscalculator --channel stable --build missing"
+                sh "ls && conan create conan-masscalculator-core/all/ --version 0.2.0 --user masscalculator --channel stable --build missing"
             }
         }
         stage('Configure CMake') {
             parallel {
                 stage('Debug') {
                     steps {
+                        sh "ls"
                         sh "cmake -B build/masscalculator-cli-Debug -G Ninja -DCMAKE_BUILD_TYPE=Debug"
                     }
                 }
